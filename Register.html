@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In - Site de Cinema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { display: flex; height: 100vh; overflow: hidden; }
+
+    .left {
+      width: 50%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .social-button {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .social-button img {
+      height: 20px;
+    }
+    .or {
+      margin: 20px 0;
+      color: gray;
+      font-size: 14px;
+    }
+    .input-field {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 15px;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .signin-btn {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      background-color: #ffa07a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .right {
+      width: 50%;
+      background: black url('https://media.istockphoto.com/id/473372872/photo/earth-at-night.jpg?s=612x612&w=0&k=20&c=jtMCz7XH7x7zrwiWpqf7h4cw6bIpv6Nw8zYwshWz6sY=') no-repeat center/cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+    .right h1 {
+      font-size: 2.5rem;
+      min-height: 60px; /* Prevent shifting while typing */
+      position: relative;
+    }
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 100%;
+      background-color: white;
+      animation: blink 0.7s infinite;
+      position: absolute;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="left">
+  <h2>Sign In </h2>
+  <button class="social-button">
+    <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="Google"> 
+    Continue with Google
+  </button>
+  <button class="social-button">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+    Continue with GitHub
+  </button>
+  <button class="social-button">
+    <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="X">
+    Continue with X
+  </button>
+
+  <div class="or">Or</div>
+
+  <div class="input-field">
+    <input type="email" name="email" placeholder="Email">
+  </div>
+  <div class="input-field">
+    <input type="password" name="password" placeholder="Password">
+  </div>
+  <button class="signin-btn">Sign In</button>
+</div>
+
+<div class="right">
+    <div class="welcome-container">
+      <h1>
+        <span id="typed-text"></span><span id="cursor">|</span>
+      </h1>
+    </div>   
+</div>
+
+
+      <script src="signin.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de cinema Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .left {
+      width: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      width: 80%;
+      max-width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #000;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .login-btn {
+      width: 100%;
+      background-color: #ffa07a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-btn:hover {
+      background-color: #ff8855;
+    }
+
+    .forgot {
+      margin: 10px 0;
+      color: #ff8855;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .social-logins button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-logins button img.icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .right {
+      width: 50%;
+      background: black url('https://media.istockphoto.com/id/473372872/photo/earth-at-night.jpg?s=612x612&w=0&k=20&c=jtMCz7XH7x7zrwiWpqf7h4cw6bIpv6Nw8zYwshWz6sY=') no-repeat center/cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .welcome-container h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: linear-gradient(to right, #6a11cb, #2575fc);
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #cursor {
+      display: inline-block;
+      color: #ff6f61;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .right-logo {
+      position: absolute;
+      top: 20px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left">
+    <div class="form-container">
+      <h2>Log in to your account</h2>
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+
+      <button class="login-btn">Log In</button>
+      <div class="forgot">Forgot password?</div>
+      <div class="social-logins">
+        <button>
+          <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" class="icon" alt="SSO"> Use SSO login
+        </button>
+        <button>
+          <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" class="icon" alt="Google"> Continue with Google
+        </button>
+        <button>
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="icon" alt="GitHub"> Continue with GitHub
+        </button>
+        <button>
+          <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" class="icon" alt="X"> Continue with X
+        </button>
+        <button>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" class="icon" alt="Facebook"> Continue with Facebook
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="welcome-container">
+      <h1>
+        <span id="typed-text"></span><span id="cursor">|</span>
+      </h1>
+    </div>   
+  </div>
+
+  <script type="module" src="login.js"></script>
+
+</body>
+</html>

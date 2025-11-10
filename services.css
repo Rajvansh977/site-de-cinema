@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url('https://gifdb.com/images/high/color-pastel-rainbow-lines-xb4joddynqs5zt6u.webp'); /* Replace this with the URL of your new background image */
+      font-family: 'Poppins', sans-serif;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    color: #333; /* Default text color */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 15px 20px; /* Padding for the navbar */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 98%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-container {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+    color: white; /* Text color for the brand */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Font size for the brand */
+    font-weight: bold; /* Bold text */
+}
+
+.navbar-links {
+    display: flex; /* Flexbox for links */
+}
+
+.navbar-links a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-links a:hover {
+    background-color: #575757; /* Background color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 20px; /* Padding for the section */
+    text-align: center; /* Center text */
+}
+
+.services-section h1 {
+    color: white; /* White color for the heading */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex; /* Use flexbox for centering */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: white; /* White background for cards */
+    padding: 20px; /* Padding inside cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+    width: 250px; /* Fixed width for cards */
+    text-align: center; /* Center text inside cards */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Modal Styles */
+.service-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for contrast */
+}
+
+.modal-content {
+    background-color: #ffffff; /* White background */
+    margin: 10% auto; /* Centered with margin */
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    animation: fadeIn 0.4s ease; /* Fade-in animation */
+}
+
+.close {
+    color: #aaa; /* Gray color */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; /* Change color on hover */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Slide in from above */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at normal position */
+    }
+}

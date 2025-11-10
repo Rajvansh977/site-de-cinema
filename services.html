@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="services.css"> <!-- Link to your CSS file -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-brand">Home</a>
+        <div class="navbar-links">
+            <a href="login.html">Login</a>
+            <a href="Register.html">Sign in</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Services Section -->
+<section class="services-section">
+    <h1>Our Services</h1>
+    <div class="services-grid">
+        <div class="service-card" onclick="openModal('service1')">
+            <h3>Movie Reviews</h3>
+            <p>In-depth analysis of the latest films.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service2')">
+            <h3>Personalized Recommendations</h3>
+            <p>Get tailored movie suggestions based on your preferences.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service3')">
+            <h3>Exclusive Interviews</h3>
+            <p>Discover the magic behind your favorite films.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service4')">
+            <h3>Latest Movie News</h3>
+            <p>Stay updated with the latest happenings in the movie industry.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service5')">
+            <h3>Community Discussions</h3>
+            <p>Join discussions with fellow movie enthusiasts.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modals for Services -->
+<div class="service-modal" id="service1">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('service1')">&times;</span>
+        <h3>Movie Reviews</h3>
+        <p>Our movie reviews are written by cinema experts who analyze each movie based on acting, direction, storyline, and visuals. We cover both mainstream and indie films to give you a comprehensive view of the best films out there.</p>
+        <ul>
+            <li>In-depth analysis of the plot and character development.</li>
+            <li>Reviews based on different genres like Action, Drama, Sci-Fi, etc.</li>
+            <li>Rating system from 1 to 10 with detailed explanation.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service-modal" id="service2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('service2')">&times;</span>
+        <h3>Personalized Recommendations</h3>
+        <p>We help you find your next favorite movie! Our recommendation engine suggests films based on your preferences and viewing history. Whether you're in the mood for a thriller, comedy, or romantic drama, we’ve got you covered!</p>
+        <ul>
+            <li>Get movie suggestions based on your favorite genres and actors.</li>
+            <li>Personalized lists tailored to your unique taste.</li>
+            <li>Never run out of something new to watch!</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service-modal" id="service3">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('service3')">&times;</span>
+        <h3>Exclusive Interviews</h3>
+        <p>Ever wondered what goes into making a movie? Our exclusive content brings you behind the scenes with in-depth interviews with directors, actors, and crew members. Discover the magic behind your favorite films!</p>
+        <ul>
+            <li>Interviews with filmmakers, actors, and cast members.</li>
+            <li>Behind-the-scenes footage and making-of videos.</li>
+            <li>Get insider information about the film industry.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service-modal" id="service4">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('service4')">&times;</span>
+        <h3>Latest Movie News</h3>
+        <p>Stay up-to-date with all the happenings in the movie industry. From new movie releases to celebrity gossip, we provide the latest and most exciting news in the world of cinema.</p>
+        <ul>
+            <li>Get real-time updates on movie releases and announcements.</li>
+            <li>Read the latest news about actors, directors, and film studios.</li>
+            <li>Follow trends in the movie industry.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service-modal" id="service5">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('service5')">&times;</span>
+        <h3>Community Discussions</h3>
+        <p>Join our community of movie enthusiasts! Share your thoughts on the latest films, discuss plot twists, and debate your favorite directors. Our forums are a great place to connect with other movie buffs.</p>
+            <ul>
+                <li>Participate in discussions and forums on a wide range of topics.</li>
+                <li>Engage with other movie lovers and share your opinions.</li>
+                <li>Join movie watch parties and live discussions.</li>
